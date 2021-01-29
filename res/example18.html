@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>传智播客学员档案</title>
+	<style type="text/css">
+/*全局控制*/
+body{font-size:12px; 	font-family:"微软雅黑"; } 
+/*重置浏览器的默认样式*/
+body,h2,form,img,input,select,textarea{padding:0; margin:0; list-style:none; border:none;}
+.all{         /*整体控制页面*/  
+	width:1024px;
+	height:863px;
+	margin:0 auto;
+	background:url( 图片/草地5.jpg) no-repeat; 
+	background-size: 100% 100%；
+}
+.list{        /*整体控制表单*/
+	width:685px;
+	padding:90px 0 0 340px;
+}
+p{margin-top:20px;}
+h2{          /*控制表单标题*/
+	 font-size:38px;
+	 color:#26211e;
+	 margin-bottom:60px;
+	 padding-left:50px;
+}
+ /*设置表单控件样式*/
+ .txt,.age{
+	 width:360px;
+	 height:30px;
+	 line-height:30px;
+	 padding-left:40px;
+	 color:#ccc;
+}
+ .txt{background:#fff url(images/icon2.png) no-repeat 10px center;}
+ .age{background:#fff url(images/icon3.png) no-repeat 10px center;}
+ .choose{
+	 width:390px;
+	 height:25px;
+	 line-height:25px;
+	 background-color:#FFF;
+	 padding:5px 0 0 10px; 
+}
+ .course,.money{
+	 width:190px;
+	 height:25px;
+	 padding-left:10px;
+}
+ .money{color:#ddd;}
+ .money_box span{
+	 font-size:18px;
+	 font-weight:bold;
+	 color:#fff;
+}
+ .message{
+	 width:390px;
+	 height:80px;
+	 padding:5px 0 0 10px;
+	 font-size:12px;
+	 color:#ccc;
+}
+ .btn{
+	 width:390px;
+	 height:30px;
+	 background-color:#eb6854;
+	 color:#FFF;
+	 font-weight:bold;
+}
+	</style>
+</head>
+<body>
+<div class="all"> 	
+    <form class="list" action="#" method="post">
+        <h2>传智播客学员档案</h2>
+        <p>
+        	<input type="text" value="本人真实姓名" class="txt" >
+        </p>
+        <p>
+        	<input type="text" value="请填写实际年龄" class="age" >
+        </p>
+		<p>
+        	<input type="text" value="请填写所在省" class="age" >
+        </p>
+		<p>
+        	<input type="text" value="请填写所在市" class="age" >
+        </p>
+        <p class="choose">
+            <label><input type="radio" name="sex"> 男</label>
+            <label><input type="radio" name="sex"> 女</label>
+        </p>
+        <p class="choose">
+            <label><input type="checkbox" > 传智老学员</label>
+            <label><input type="checkbox" > 朋友推荐</label>
+            <label><input type="checkbox" > 视频教程</label>
+            <label><input type="checkbox" > CSDN论坛</label>
+        </p>
+        <p>
+            <select class="course">
+                <option>JAVA就业班</option>
+                <option selected="selected">网页平面UI设计就业班</option>
+                <option>IOS就业班</option>
+            </select>
+        </p>
+        <p class="money_box">
+            <input type="text" value="工作薪资" class="money"><span> 元/月（收入）</span>
+        </p>
+        <p>
+        	<textarea cols="50" rows="5" class="message">请简述您有没有基础，以及为什么选择来传智播客学习？</textarea>
+        </p>
+        <p>
+        	<input type="submit" class="btn" value="提  交">
+        </p>
+    </form>
+</div>
+</body>
+</html>
