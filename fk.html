@@ -5,7 +5,11 @@
     <meta charset="utf-8">
 
     <title>合成凡柯</title>
-    <audio autoplay="" loop="loop"><source src="林凡Marco - Purple.mp3"></audio>
+
+	
+	
+	    
+	    
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
 
@@ -96,6 +100,24 @@
     <script src="src/settings.js" charset="utf-8"></script>
 
     <script type="text/javascript">
+		
+		    var sound1="林凡 - All Right.mp3";
+		    var sound2="林凡Marco - Purple.mp3";
+		    var sound3="THE9-陆柯燃 - K'.mp3";
+		    var sound4="林凡Marco - Nightmare.mp3";
+		    var sound5="林凡Marco - You're My.mp3";
+		    
+		    var x = Math.random()*5;
+		    var y = Math.round(x);
+		 
+		    if (y==0) y = sound1;
+		    else if(y==1) y = sound2;
+		    else if(y==2) y = sound3;
+		    else if(y==3) y = sound4;
+		    else if(y==4) y = sound5;
+		   
+		    document.write('<audio src='+'"' +y+ '" '+'hidden="true" autoplay="true" loop="true"> </audio>')
+		    
         var preloader;
         var adCompleteFlag = false;
         var resCompleteFlag = false;
